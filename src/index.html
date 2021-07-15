@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Cipher.net</h1>
+
+  <div class="contenido">
+    <div class= "caja">
+      <textarea class = "texto" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+      <input class="numero" id="desplazamiento" type="number" placeholder="Código" required />
+
+      <div class = "control">
+        <button class="botones" id="encriptar">Encriptar</button>
+        <button class="botones" id="decifrar">Desencriptar</button>
+      </div>
+
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+    <div class= "caja">
+      <textarea class = "texto" id="resultado" placeholder="Mensaje encriptado"></textarea>
+      <div class="control">
+        <button class="botones" id="borrar">Borrar</button>
+        <button class="botones" id="copiar">Copiar</button>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
