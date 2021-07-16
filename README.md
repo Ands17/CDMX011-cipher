@@ -23,7 +23,7 @@ Se basó en el método  de cifrado cesar, es un tipo de cifrado por sustitución
 * 5. Presionar copiar, esta acción le permitirá al usuario copiar el mensaje resultante en el portapapeles.
 * 6. Si se desea escribir un nuevo mensaje presionar borrar, y volver a introducir un mensaje.
 
-##DESCRIPCIÓN DEL PROYECTO
+# DESCRIPCIÓN DEL PROYECTO
 Este proyecto contiene estos archivos:
 * `src/index.html`: Este archivo contiene la estructura de la página.
 * `src/cipher.js`: Contiene un objeto exportado llamado cipher, el cual contiene dos propiedades:
