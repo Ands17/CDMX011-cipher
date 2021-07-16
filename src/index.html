@@ -8,21 +8,25 @@
 </head>
 
 <body>
-  <h1>Cipher.net</h1>
+  <h1>EncryptApp</h1>
+  <h2>Podrás mensajear de manera segura en todas tus redes sociales.<br>
+    Ingresa un mensaje y un número en el código para <br>
+    indicar el desplazamiento de letras en el alfabeto inglés,<br>
+    y se recorrerá tu mensaje para cifrarlo. </h2>
 
   <div class="contenido">
-    <div class= "caja">
-      <textarea class = "texto" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+    <div class="caja">
+      <textarea class="texto" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
       <input class="numero" id="desplazamiento" type="number" placeholder="Código" required />
 
-      <div class = "control">
+      <div class="control">
         <button class="botones" id="encriptar">Encriptar</button>
         <button class="botones" id="decifrar">Desencriptar</button>
       </div>
 
     </div>
-    <div class= "caja">
-      <textarea class = "texto" id="resultado" placeholder="Mensaje encriptado"></textarea>
+    <div class="caja">
+      <textarea class="texto" id="resultado"></textarea>
       <div class="control">
         <button class="botones" id="borrar">Borrar</button>
         <button class="botones" id="copiar">Copiar</button>

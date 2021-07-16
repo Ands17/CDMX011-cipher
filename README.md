@@ -1,5 +1,41 @@
 # Cifrado César
 
+# EXPERIENCIA DE USUARIO
+Este proyecto se pensó en la privacidad de los mensajes entre los usuarios en sus diferentes redes sociales. Con una interfaz sencilla donde se pueda visualizar el mensaje de entrada  y visualizar el mensaje encriptado y desencriptado según lo requiera el usuario, además podrá copiarlo al portapapeles para trasladar y pegar en cualquier chat.
+Con EncryptApp le permite al usuario tener la privacidad con quiénes se mensajean, porque aún teniendo contraseña en nuestros dispositivos no es suficiente para mantener la privacidad en nuestros mensajes.
+
+# PROCESO PARA DEFINIR EL PRODUCTO
+Se hizo un prototipo de baja fidelidad en dónde contenía un input para la entrada de texto y otro para el mensaje encriptado con dos botones encriptar y desencriptar.
+Se realizó un segundo prototipo  debido a que con los input no se visualizaba todo el texto a cifrar y se cambió por textArea, además se agregó un input llamado código donde el usuario podrá ingresar un número que hace el desplazamiento  de las letras del texto original y reemplazarla por otra.
+Por último se agregó dos botones de borrar y copiar para facilitar al usuario estas acciones 
+
+# INTRODUCCIÓN
+Este proyecto es útil para encriptar y desencriptar mensajes, se requiere de un número que desplaza las letras del texto original y las reemplaza por otra dentro del alfabeto inglés.
+Se basó en el método  de cifrado cesar, es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+
+
+# Funcionalidad 
+ 
+* 1. Entrar a la app 
+* 2. Introducir un mensaje que se desea encriptar o desencriptar.
+* 3. Introducir un código
+* 4. Presionar encriptar o desencriptar según sea el caso requerido.
+* 5. Presionar copiar, esta acción le permitirá al usuario copiar el mensaje resultante en el portapapeles.
+* 6. Si se desea escribir un nuevo mensaje presionar borrar, y volver a introducir un mensaje.
+
+##DESCRIPCIÓN DEL PROYECTO
+Este proyecto contiene estos archivos:
+* `src/index.html`: Este archivo contiene la estructura de la página.
+* `src/cipher.js`: Contiene un objeto exportado llamado cipher, el cual contiene dos propiedades:
+  - `encode(offset, string)`: `offset` es el número de posiciones que
+    queremos mover a la derecha en el alfabeto inglés  y `string` el mensaje que se quiere cifrar.
+  - `decode(offset, string)`: `offset` es el número de posiciones que
+    queremos mover a la izquierda en el alfabeto inglés  y `string` el mensaje
+    que se quiere descifrar.
+* `src/index.js`: En este archivo se importa el objeto cipher. Se obtiene el contenido de los textArea que se encuentran en el index.html y cuando el usuario realiza alguna acción (presionar encriptar o desencriptar) se devuelve un valor en otro textArea. También se da funcionalidad a los botones de borrar y copiar.
+* `src/style.css`:Aquí se le dió diseño a la app.
+
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
